@@ -1,0 +1,20 @@
+$c1: #015045;
+$c2: #37645e;
+$c3: #849e9b;
+.footer {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $c1;
+    color: white;
+    bottom: 0;
+    padding: 20px 0px;
+    .fr {
+        display: grid;
+        place-items: center;
+        margin-top: 10px;
+    }
+}

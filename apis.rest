@@ -1,0 +1,37 @@
+POST https://ota-api.herokuapp.com/api/project-1/users/signup HTTP/1.1
+content-type: application/json
+
+{
+    "name": "gaurav",
+    "email":"gouravlathwal63@gmail.com",
+    "password":"12345678",
+    "username": "glamb"
+}
+
+###
+
+GET https://ota-api.herokuapp.com/api/project-1/users/all?key=d083470d35a9fc4a63ba86f4 HTTP/1.1
+content-type: application/json
+
+###
+
+POST https://ota-api.herokuapp.com/api/project-1/users/signin HTTP/1.1
+content-type: application/json
+
+{
+    
+    "password":"12345678",
+    "username": "glamb"
+}
+
+###
+
+PUT https://ota-api.herokuapp.com/api/project-1/users/profile HTTP/1.1
+content-type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNjAxZGM5MTIwMTUxMWM0ZmE0MjIzNCIsInVzZXJuYW1lIjoiZ2xhbWIiLCJpYXQiOjE2NTA0NjY0MjN9.pirrAX444VqWrCMMRPfb6bi6EK3e1j3NQ1eUe6VGGok
+
+{
+    "name": "newGuro",
+    "password":"12345678",
+    "username": "glambnew"
+}

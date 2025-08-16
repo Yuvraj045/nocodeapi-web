@@ -1,0 +1,88 @@
+$c1: #015045;
+$c2: #4f8b83;
+$c3: #849e9b;
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  color: $c1;
+}
+
+.form {
+  margin: 20px auto;
+  width: 500px;
+  border: 1px solid $c3;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px $c3;
+  padding: 10px 50px;
+  font-size: medium;
+  font-weight: 400;
+  min-height: 80vh;
+  .hed {
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+    color: $c1;
+    padding: 20px;
+  }
+  input {
+    width: 95%;
+    padding: 10px;
+    border: 2px solid $c3;
+    border-radius: 5px;
+    margin: 5px 0 15px 0;
+    outline: none;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+  }
+  input:hover {
+    border: 2px solid $c1;
+    box-shadow: 1px 1px 4px $c3;
+  }
+  input:focus {
+    border: 2px solid $c1;
+    box-shadow: 2px 2px 8px $c3;
+  }
+  label {
+    margin: 5px 0;
+  }
+  button {
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    outline: none;
+    width: 40%;
+    color: white;
+    font-weight: 600;
+  }
+  .submit-btn {
+    width: 100%;
+    background-color: $c1;
+    font-size: medium;
+  }
+  .submit-btn:hover {
+    box-shadow: 2px 2px 5px $c2;
+  }
+  .submit-btn:disabled {
+    background-color: $c2;
+  }
+}
+.modal {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid $c1;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 70%;
+  }
+}

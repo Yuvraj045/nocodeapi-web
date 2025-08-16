@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00554a;
+  padding: 15px 40px;
+  font-size: large;
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 20px;
+  display: inline-block;
+  position: relative;
+}
+.navbar a:hover {
+  text-shadow: 1px 1px 2px grey;
+  color: white;
+}
+
+.navbar a:after {
+  content: "";
+  color: white;
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-out;
+}
+.navbar a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+.logout {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 20px;
+  display: inline-block;
+  position: relative;
+}
+.logout:hover {
+  text-shadow: 1px 1px 2px grey;
+  color: white;
+}
+
+.logout:after {
+  content: "";
+  color: white;
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-out;
+}
+.logout:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}

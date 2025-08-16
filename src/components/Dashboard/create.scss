@@ -1,0 +1,176 @@
+$c1: #015045;
+$c2: #4f8b83;
+$c3: #849e9b;
+.link {
+    text-decoration: none;
+    font-weight: 500;
+    color: $c1;
+}
+
+.createtable {
+    margin: 20px auto;
+    width: 60%;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px $c3;
+    padding: 10px 50px;
+    font-size: large;
+    font-weight: 400;
+    min-height: 80vh;
+    .hed {
+        font-weight: 500;
+        text-align: center;
+        font-size: x-large;
+        color: $c1;
+        padding: 20px;
+    }
+    input,
+    select {
+        background-color: white;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid $c3;
+        border-radius: 5px;
+        margin: 5px 0 5px 0;
+        outline: none;
+        -webkit-transition: 0.1s;
+        transition: 0.1s;
+    }
+    input:hover {
+        border: 2px solid $c1;
+        box-shadow: 1px 1px 4px $c3;
+    }
+    input:focus {
+        border: 2px solid $c1;
+        box-shadow: 2px 2px 8px $c3;
+    }
+    label {
+        margin: 5px 0;
+    }
+    button {
+        cursor: pointer;
+        padding: 10px 0;
+        border-radius: 5px;
+        border: none;
+        margin: 10px 0;
+        outline: none;
+        width: 40%;
+        color: white;
+        font-weight: 600;
+        background-color: $c1;
+    }
+    .submit-btn {
+        width: 100%;
+    }
+    button:hover {
+        box-shadow: 4px 4px 10px $c2;
+    }
+    .width-m {
+        width: 200px;
+        margin-right: 20px;
+    }
+    .width-s {
+        padding: 5px;
+        width: 120px !important;
+        margin-right: 20px;
+        text-align: center;
+    }
+    .column {
+        padding: 5px 10px;
+        border: 2px solid #e2e2e2;
+        border-radius: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .column:hover {
+        background-color: #f5f5f5;
+        box-shadow: 2px 2px 4px #e2e2e2;
+    }
+}
+
+.createproject {
+    margin: 20px auto;
+    width: 60%;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px $c3;
+    padding: 10px 50px;
+    font-size: large;
+    font-weight: 400;
+    min-height: 80vh;
+    .hed {
+        font-weight: 500;
+        text-align: center;
+        font-size: x-large;
+        color: $c1;
+        padding: 20px;
+    }
+    input {
+        background-color: white;
+        width: 95%;
+        padding: 8px;
+        border: 2px solid $c3;
+        border-radius: 5px;
+        margin: 5px 0 5px 0;
+        outline: none;
+        -webkit-transition: 0.1s;
+        transition: 0.1s;
+    }
+    input:hover {
+        border: 2px solid $c1;
+        box-shadow: 1px 1px 4px $c3;
+    }
+    input:focus {
+        border: 2px solid $c1;
+        box-shadow: 2px 2px 8px $c3;
+    }
+    label {
+        margin: 5px 0;
+    }
+    button {
+        cursor: pointer;
+        padding: 10px 0;
+        border-radius: 5px;
+        border: none;
+        margin: 10px 0;
+        outline: none;
+        width: 40%;
+        color: white;
+        font-weight: 600;
+        background-color: $c1;
+    }
+    .submit-btn {
+        width: 100%;
+    }
+    button:hover {
+        box-shadow: 4px 4px 10px $c2;
+    }
+    .width-m {
+        width: 200px;
+        margin-right: 20px;
+    }
+    .width-s {
+        padding: 5px;
+        width: 120px !important;
+        margin-right: 20px;
+        text-align: center;
+    }
+    .column {
+        padding: 5px 10px;
+        border: 2px solid #e2e2e2;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    .column:hover {
+        background-color: #e8f0ef;
+        box-shadow: 2px 2px 4px #e2e2e2;
+    }
+}
+
+@media (max-width: 600px) {
+    .createtable .createproject {
+        width: 70%;
+    }
+}
